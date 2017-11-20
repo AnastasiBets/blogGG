@@ -3,7 +3,7 @@ before_action :authenticate_user!
 before_action :set_post, only:[:show, :edit, :update, :destroy]
 
   def show
-    pp @comment = @post.postcomments
+    @comment = @post.postcomments
   end
 
   def new
