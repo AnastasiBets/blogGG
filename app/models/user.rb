@@ -9,4 +9,7 @@ class User < ApplicationRecord
 
   has_attached_file :avatar, styles: { medium: "300x300>", thumb: "100x100>" }, default_url: "/images/default.png"
   validates_attachment_content_type :avatar, content_type: /\Aimage\/.*\z/
+
+  validates :nickname, :email, :password, :password_confirmation, presence: true
+  validates :email, uniqueness: true
 end

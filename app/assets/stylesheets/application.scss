@@ -19,14 +19,20 @@
 @import "posts";
 
 .center-container{
+    float: right;
 	width : 70%;
+	background-color: #ffcccc;
 }
 
 a, a:link{
 	text-decoration : none;
+	color: #003333;
 }
 
 .right-container{
-	text-align : center;
+	text-align : auto;
 }
 
+.navbar-inverse{
+	margin: 0;
+  }
