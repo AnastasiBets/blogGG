@@ -11,5 +11,6 @@ class User < ApplicationRecord
   validates_attachment_content_type :avatar, content_type: /\Aimage\/.*\z/
 
   validates :nickname, :email, :password, :password_confirmation, presence: true
-  validates :email, uniqueness: true
+  validates :nickname, length: { in: 6..20 }
+  validates :email, uniqueness: true, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i, on: :create }
 end
