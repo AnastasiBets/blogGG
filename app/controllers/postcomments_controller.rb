@@ -18,7 +18,6 @@ before_action :authenticate_user!
 
   def edit
     
-    redirect_to post_path(params[:post_id])
   end
 
   def destroy

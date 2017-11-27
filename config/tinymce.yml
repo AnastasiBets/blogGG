@@ -1,0 +1,5 @@
+toolbar: 
+  - image | undo redo | bold italic | alignleft aligncenter alignjustify | bullist numlist outdent indent | removeformat
+plugins:
+  - image
+  - link
