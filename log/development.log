@@ -4881,3 +4881,58 @@ Processing by PhotosController#index as HTML
 Completed 200 OK in 615ms (Views: 586.8ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/photos" for 127.0.0.1 at 2017-11-28 20:42:50 +0200
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  Rendered photos/index.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 2124ms (Views: 2080.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-28 20:43:08 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mPost Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_rightbar.html.erb (15.6ms)
+  Rendered pages/index.html.erb within layouts/application (78.1ms)
+  Rendered layouts/_navbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 660ms (Views: 653.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-28 20:43:12 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_rightbar.html.erb (1.0ms)
+  Rendered pages/index.html.erb within layouts/application (27.5ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 644ms (Views: 623.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2017-11-28 20:43:16 +0200
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (107.1ms)
+  Rendered posts/new.html.erb within layouts/application (122.7ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 790ms (Views: 741.9ms | ActiveRecord: 0.0ms)
+
+
