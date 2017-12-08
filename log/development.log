@@ -5813,3 +5813,420 @@ Processing by PostsController#show as HTML
 Completed 200 OK in 904ms (Views: 882.4ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-12-08 21:11:39 +0200
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mPost Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_rightbar.html.erb (1.0ms)
+  Rendered pages/index.html.erb within layouts/application (283.3ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 5395ms (Views: 5355.6ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-12-08 21:12:21 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (1.0ms)
+  Rendered users/sessions/new.html.erb within layouts/application (217.7ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 1087ms (Views: 1045.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-12-08 21:12:36 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QYMeK18TCfKP0+JTLQ2vE48v0OgxNilNf+lwg3cIHXcE+DLhK8PBN+umnUZbJyuI+YQSr+iwP4uW+tSFceLWpA==", "user"=>{"email"=>"Nicky.Mouse@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "nicky.mouse@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.1ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 13], ["current_sign_in_at", "2017-12-08 19:12:36.478894"], ["last_sign_in_at", "2017-12-08 07:29:13.826809"], ["updated_at", "2017-12-08 19:12:36.484885"], ["id", 1]]
+  [1m[35m (100.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 1079ms (ActiveRecord: 104.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-08 21:12:37 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_rightbar.html.erb (0.0ms)
+  Rendered pages/index.html.erb within layouts/application (29.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 718ms (Views: 673.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/posts/3/edit" for 127.0.0.1 at 2017-12-08 21:12:41 +0200
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (6.5ms)
+  Rendered posts/edit.html.erb within layouts/application (23.3ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 679ms (Views: 635.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/photos" for 127.0.0.1 at 2017-12-08 21:12:48 +0200
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhoto Load (1.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  Rendering photos/index.html.erb within layouts/application
+  Rendered photos/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 678ms (Views: 624.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/photos" for 127.0.0.1 at 2017-12-08 21:12:54 +0200
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhoto Load (0.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  Rendering photos/index.html.erb within layouts/application
+  Rendered photos/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 699ms (Views: 665.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/photos" for 127.0.0.1 at 2017-12-08 21:12:57 +0200
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhoto Load (1.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  Rendering photos/index.html.erb within layouts/application
+  Rendered photos/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 694ms (Views: 657.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/photos" for 127.0.0.1 at 2017-12-08 21:12:59 +0200
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhoto Load (0.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  Rendering photos/index.html.erb within layouts/application
+  Rendered photos/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 746ms (Views: 699.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/photos" for 127.0.0.1 at 2017-12-08 21:16:03 +0200
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhoto Load (0.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  Rendering photos/index.html.erb within layouts/application
+  Rendered photos/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 687ms (Views: 667.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/photos/new" for 127.0.0.1 at 2017-12-08 21:26:11 +0200
+Processing by PhotosController#new as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photos/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered photos/_form.html.erb (8.3ms)
+  Rendered photos/new.html.erb within layouts/application (24.4ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 777ms (Views: 709.1ms | ActiveRecord: 5.0ms)
+
+
+Started POST "/photos" for 127.0.0.1 at 2017-12-08 21:28:34 +0200
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qo8hihplFEkRfW1U80yl/DlvRvZ9KNr37zm6zLQNyAyRHchi5x7/PwUGchnu8xkTuJAWlFqfqJ0agYjPhLc2Ow==", "photo"=>{"name"=>"The Sun", "photo"=>#<ActionDispatch::Http::UploadedFile:0xd9618c8 @tempfile=#<Tempfile:C:/Users/08DE~1/AppData/Local/Temp/RackMultipart20171208-10208-1shnzbt.png>, @original_filename="sticker,375x360-bg,ffffff.u3.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"photo[photo]\"; filename=\"sticker,375x360-bg,ffffff.u3.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Save"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/photos
+Completed 302 Found in 47ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/photos" for 127.0.0.1 at 2017-12-08 21:28:35 +0200
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhoto Load (1.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  Rendering photos/index.html.erb within layouts/application
+  Rendered photos/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 685ms (Views: 665.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/photos" for 127.0.0.1 at 2017-12-08 21:28:43 +0200
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhoto Load (1.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  Rendering photos/index.html.erb within layouts/application
+  Rendered photos/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 717ms (Views: 679.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/images/new" for 127.0.0.1 at 2017-12-08 21:28:46 +0200
+Processing by ImagesController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (0.0ms)
+  Rendered images/new.html.erb within layouts/application (17.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 747ms (Views: 711.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/images" for 127.0.0.1 at 2017-12-08 21:30:15 +0200
+Processing by ImagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YUZh9/XVx/8cWUSMTxqdWK3s6kIHsW7vsesXWb/6zqYmEMrC08wdhMXCANuQAKiAcvnFacNcD47ww5M7PXZgYw==", "images"=>[#<ActionDispatch::Http::UploadedFile:0xde280e0 @tempfile=#<Tempfile:C:/Users/08DE~1/AppData/Local/Temp/RackMultipart20171208-10208-1v1tpjz.jpg>, @original_filename="22345394_1408456082604469_454809935_o.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"images[]\"; filename=\"22345394_1408456082604469_454809935_o.jpg\"\r\nContent-Type: image/jpeg\r\n">, #<ActionDispatch::Http::UploadedFile:0xde28098 @tempfile=#<Tempfile:C:/Users/08DE~1/AppData/Local/Temp/RackMultipart20171208-10208-8hco7j.jpg>, @original_filename="22311952_1408454532604624_956955085_o.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"images[]\"; filename=\"22311952_1408454532604624_956955085_o.jpg\"\r\nContent-Type: image/jpeg\r\n">], "commit"=>"Upload"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Command :: SET PATH=C:\Program Files (x86)\GnuWin32\bin;%PATH% & file -b --mime "C:/Users/08DE~1/AppData/Local/Temp/7d715abdc6cc57955fa098ff469f64e320171208-10208-uwom5p.jpg"
+Command :: SET PATH=C:\Program Files (x86)\GnuWin32\bin;%PATH% & identify -format '%wx%h,%[exif:orientation]' "C:/Users/08DE~1/AppData/Local/Temp/7d715abdc6cc57955fa098ff469f64e320171208-10208-y1druh.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: SET PATH=C:\Program Files (x86)\GnuWin32\bin;%PATH% & identify -format '%wx%h,%[exif:orientation]' "C:/Users/08DE~1/AppData/Local/Temp/7d715abdc6cc57955fa098ff469f64e320171208-10208-y1druh.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: SET PATH=C:\Program Files (x86)\GnuWin32\bin;%PATH% & file -b --mime "C:/Users/08DE~1/AppData/Local/Temp/7d715abdc6cc57955fa098ff469f64e320171208-10208-f16j09.jpg"
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Command :: SET PATH=C:\Program Files (x86)\GnuWin32\bin;%PATH% & file -b --mime "C:/Users/08DE~1/AppData/Local/Temp/aa5b3c12f2356ff471e6974257bccb8e20171208-10208-z5worr.jpg"
+Command :: SET PATH=C:\Program Files (x86)\GnuWin32\bin;%PATH% & identify -format '%wx%h,%[exif:orientation]' "C:/Users/08DE~1/AppData/Local/Temp/aa5b3c12f2356ff471e6974257bccb8e20171208-10208-1604ryn.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: SET PATH=C:\Program Files (x86)\GnuWin32\bin;%PATH% & identify -format '%wx%h,%[exif:orientation]' "C:/Users/08DE~1/AppData/Local/Temp/aa5b3c12f2356ff471e6974257bccb8e20171208-10208-1604ryn.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: SET PATH=C:\Program Files (x86)\GnuWin32\bin;%PATH% & file -b --mime "C:/Users/08DE~1/AppData/Local/Temp/aa5b3c12f2356ff471e6974257bccb8e20171208-10208-ad41no.jpg"
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/images
+Completed 302 Found in 693ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/images" for 127.0.0.1 at 2017-12-08 21:30:16 +0200
+Processing by ImagesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (1.0ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  Rendered images/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 679ms (Views: 658.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/images" for 127.0.0.1 at 2017-12-08 21:30:23 +0200
+Processing by ImagesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (1.0ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  Rendered images/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 685ms (Views: 642.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-08 21:33:30 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_rightbar.html.erb (0.0ms)
+  Rendered pages/index.html.erb within layouts/application (32.1ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 739ms (Views: 688.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/photos" for 127.0.0.1 at 2017-12-08 21:33:39 +0200
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhoto Load (1.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  Rendering photos/index.html.erb within layouts/application
+  Rendered photos/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 719ms (Views: 630.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/photos" for 127.0.0.1 at 2017-12-08 21:33:43 +0200
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhoto Load (1.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  Rendering photos/index.html.erb within layouts/application
+  Rendered photos/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 714ms (Views: 671.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/photos" for 127.0.0.1 at 2017-12-08 21:33:46 +0200
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhoto Load (1.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  Rendering photos/index.html.erb within layouts/application
+  Rendered photos/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 715ms (Views: 671.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/photos" for 127.0.0.1 at 2017-12-08 21:33:48 +0200
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhoto Load (1.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  Rendering photos/index.html.erb within layouts/application
+  Rendered photos/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 688ms (Views: 653.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-08 21:33:51 +0200
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_rightbar.html.erb (0.0ms)
+  Rendered pages/index.html.erb within layouts/application (30.4ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 672ms (Views: 652.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2017-12-08 21:33:53 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPostcomment Load (0.0ms)[0m  [1m[34mSELECT "postcomments".* FROM "postcomments" WHERE "postcomments"."post_id" = ?[0m  [["post_id", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_rightbar.html.erb (0.0ms)
+  Rendered posts/show.html.erb within layouts/application (34.2ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 705ms (Views: 654.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/photos" for 127.0.0.1 at 2017-12-08 21:33:58 +0200
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhoto Load (1.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  Rendering photos/index.html.erb within layouts/application
+  Rendered photos/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 720ms (Views: 677.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/images/new" for 127.0.0.1 at 2017-12-08 21:34:00 +0200
+Processing by ImagesController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (1.0ms)
+  Rendered images/new.html.erb within layouts/application (17.4ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 669ms (Views: 647.9ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/images" for 127.0.0.1 at 2017-12-08 21:34:08 +0200
+Processing by ImagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s2udlFFbQlRSWaCxV9fnr8zC9267pfr4csQLs/PNroL0PTahd0KYL4vC5OaIzdJ3E9fYRX9Im5kz7I/RcUEARw==", "images"=>[#<ActionDispatch::Http::UploadedFile:0xdc45e90 @tempfile=#<Tempfile:C:/Users/08DE~1/AppData/Local/Temp/RackMultipart20171208-10208-1fyuzrf.jpg>, @original_filename="Завантаження.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"images[]\"; filename=\"\xD0\x97\xD0\xB0\xD0\xB2\xD0\xB0\xD0\xBD\xD1\x82\xD0\xB0\xD0\xB6\xD0\xB5\xD0\xBD\xD0\xBD\xD1\x8F.jpg\"\r\nContent-Type: image/jpeg\r\n">], "commit"=>"Upload"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Command :: SET PATH=C:\Program Files (x86)\GnuWin32\bin;%PATH% & file -b --mime "C:/Users/08DE~1/AppData/Local/Temp/e0b654e656a80b764781cc431d48ccb920171208-10208-1rq68yc.jpg"
+Command :: SET PATH=C:\Program Files (x86)\GnuWin32\bin;%PATH% & identify -format '%wx%h,%[exif:orientation]' "C:/Users/08DE~1/AppData/Local/Temp/e0b654e656a80b764781cc431d48ccb920171208-10208-1jhcn1e.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: SET PATH=C:\Program Files (x86)\GnuWin32\bin;%PATH% & identify -format '%wx%h,%[exif:orientation]' "C:/Users/08DE~1/AppData/Local/Temp/e0b654e656a80b764781cc431d48ccb920171208-10208-1jhcn1e.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: SET PATH=C:\Program Files (x86)\GnuWin32\bin;%PATH% & file -b --mime "C:/Users/08DE~1/AppData/Local/Temp/e0b654e656a80b764781cc431d48ccb920171208-10208-1j729lo.jpg"
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/images
+Completed 302 Found in 108ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/images" for 127.0.0.1 at 2017-12-08 21:34:09 +0200
+Processing by ImagesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.0ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  Rendered images/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 794ms (Views: 767.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/images" for 127.0.0.1 at 2017-12-08 21:35:11 +0200
+Processing by ImagesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.0ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  Rendered images/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 711ms (Views: 640.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/images/new" for 127.0.0.1 at 2017-12-08 21:35:16 +0200
+Processing by ImagesController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (0.0ms)
+  Rendered images/new.html.erb within layouts/application (41.6ms)
+  Rendered layouts/_navbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 713ms (Views: 670.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/images" for 127.0.0.1 at 2017-12-08 21:35:23 +0200
+Processing by ImagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BaRW++y1XDgTHrzDwebt39FTn3B8q6aHRFT8Hz/57LNC8v3OyqyGQ8qF+JQe/NgHDkawW7hGx+YFfHh9vXVCdg==", "images"=>[#<ActionDispatch::Http::UploadedFile:0xc7dfd48 @tempfile=#<Tempfile:C:/Users/08DE~1/AppData/Local/Temp/RackMultipart20171208-10208-pehryv.jpg>, @original_filename="Завантаження.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"images[]\"; filename=\"\xD0\x97\xD0\xB0\xD0\xB2\xD0\xB0\xD0\xBD\xD1\x82\xD0\xB0\xD0\xB6\xD0\xB5\xD0\xBD\xD0\xBD\xD1\x8F.jpg\"\r\nContent-Type: image/jpeg\r\n">], "commit"=>"Upload"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Command :: SET PATH=C:\Program Files (x86)\GnuWin32\bin;%PATH% & file -b --mime "C:/Users/08DE~1/AppData/Local/Temp/e0b654e656a80b764781cc431d48ccb920171208-10208-o6f2xj.jpg"
+Command :: SET PATH=C:\Program Files (x86)\GnuWin32\bin;%PATH% & identify -format '%wx%h,%[exif:orientation]' "C:/Users/08DE~1/AppData/Local/Temp/e0b654e656a80b764781cc431d48ccb920171208-10208-1mpzfyj.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: SET PATH=C:\Program Files (x86)\GnuWin32\bin;%PATH% & identify -format '%wx%h,%[exif:orientation]' "C:/Users/08DE~1/AppData/Local/Temp/e0b654e656a80b764781cc431d48ccb920171208-10208-1mpzfyj.jpg[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: SET PATH=C:\Program Files (x86)\GnuWin32\bin;%PATH% & file -b --mime "C:/Users/08DE~1/AppData/Local/Temp/e0b654e656a80b764781cc431d48ccb920171208-10208-1xaccqg.jpg"
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/images
+Completed 302 Found in 120ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/images" for 127.0.0.1 at 2017-12-08 21:35:23 +0200
+Processing by ImagesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.0ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  Rendered images/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 695ms (Views: 664.4ms | ActiveRecord: 1.0ms)
+
+
