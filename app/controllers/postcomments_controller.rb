@@ -1,5 +1,7 @@
 class PostcommentsController < ApplicationController
 before_action :authenticate_user!
+before_action :find_post, only:[:update, :edit]
+before_action :set_comment, only:[:edit, :update, :destroy]
 
   def create
     params[:postcomment][:post_id] = params[:post_id]
@@ -20,14 +22,30 @@ before_action :authenticate_user!
     
   end
 
-  def destroy
-    
+  def update
+    if pp @comment.update(comment_params)
+        redirect_to post_path(params[:post_id])
+    else
+      render 'edit'
+    end
+  end
+
+  def destroy 
+    @comment.destroy
     redirect_to post_path(params[:post_id])
   end
 
 private
 
   def comment_params
-    params.require(:postcomment).permit(:post_id, :user_id, :comment)
+    params.require(:postcomment).permit(:user_id, :post_id, :comment)
+  end
+
+  def set_comment  
+    pp @comment = Postcomment.find(params[:id])
+  end
+
+  def find_post
+    @post = Post.find(params[:post_id])
   end
 end
