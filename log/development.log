@@ -7968,3 +7968,1025 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 2304ms (Views: 2235.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-12-16 14:31:11 +0200
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_rightbar.html.erb (0.0ms)
+  Rendered pages/index.html.erb within layouts/application (83.9ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (4.5ms)
+Completed 200 OK in 2427ms (Views: 2289.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-16 14:31:29 +0200
+Processing by PagesController#index as HTML
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_rightbar.html.erb (0.0ms)
+  Rendered pages/index.html.erb within layouts/application (35.2ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 739ms (Views: 678.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/photos" for 127.0.0.1 at 2017-12-16 14:31:34 +0200
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPhoto Load (1.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  Rendering photos/index.html.erb within layouts/application
+  Rendered photos/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 638ms (Views: 617.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/photos/new" for 127.0.0.1 at 2017-12-16 14:31:37 +0200
+Processing by PhotosController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering photos/new.html.erb within layouts/application
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered photos/_form.html.erb (18.8ms)
+  Rendered photos/new.html.erb within layouts/application (39.8ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (3.0ms)
+Completed 200 OK in 712ms (Views: 686.8ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/photos" for 127.0.0.1 at 2017-12-16 14:31:48 +0200
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0dQLY3AgKS3rep95iy9cAnFOSmPTTLs9F/kW7LyiqDfEjnaL1o/Ikv0O0ruXHusqeMm59f+3vqwHL5op1CpLvA==", "photo"=>{"name"=>"ertyui", "photo"=>#<ActionDispatch::Http::UploadedFile:0xc84a410 @tempfile=#<Tempfile:C:/Users/08DE~1/AppData/Local/Temp/RackMultipart20171216-8868-1nr7rlw.png>, @original_filename="default-avatar-ponsy-deer.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"photo[photo]\"; filename=\"default-avatar-ponsy-deer.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Save"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/photos
+Completed 302 Found in 23ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/photos" for 127.0.0.1 at 2017-12-16 14:31:48 +0200
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPhoto Load (1.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  Rendering photos/index.html.erb within layouts/application
+  Rendered photos/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 654ms (Views: 636.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-12-16 14:33:11 +0200
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 21ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2017-12-16 14:33:11 +0200
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/devise/shared/_links.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (317.9ms)
+Completed 200 OK in 1633ms (Views: 1607.5ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2017-12-16 14:33:53 +0200
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Byvw5JBix8c+jFz4wUN4TkwyCMZHXjWksVzDs47SFdjNydBhK1KvbE3OK5nUezVUWUzN1+S2/z/Wv+uMD1ZYqQ==", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (1.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 7ms (ActiveRecord: 1.0ms)
+
+
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Byvw5JBix8c+jFz4wUN4TkwyCMZHXjWksVzDs47SFdjNydBhK1KvbE3OK5nUezVUWUzN1+S2/z/Wv+uMD1ZYqQ==", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Login"}
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/devise/shared/_links.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (95.3ms)
+Completed 200 OK in 777ms (Views: 621.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2017-12-16 14:34:08 +0200
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qKXteEPTCwdu4+qSP7SxFl3neZz+mcz/1ZZP/uBJd2piR839+ONjrB2hnfMqjPwMSJm8jV1xBmSydWfBYc06Gw==", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (1.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 1.0ms)
+
+
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qKXteEPTCwdu4+qSP7SxFl3neZz+mcz/1ZZP/uBJd2piR839+ONjrB2hnfMqjPwMSJm8jV1xBmSydWfBYc06Gw==", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Login"}
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/devise/shared/_links.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (88.3ms)
+Completed 200 OK in 747ms (Views: 625.5ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mAdminUser Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "admin_users" WHERE "admin_users"."email" = ? LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "admin_users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "admin@example.com"], ["encrypted_password", "$2a$11$hXbYCkrk258KP86HIJIXv.aCibLDTXSW.w3mbCe3bxKudaoD2q0ii"], ["created_at", "2017-12-16 12:35:09.503143"], ["updated_at", "2017-12-16 12:35:09.503143"]]
+  [1m[35m (106.0ms)[0m  [1m[36mcommit transaction[0m
+Started POST "/admin/login" for 127.0.0.1 at 2017-12-16 14:36:20 +0200
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qKXteEPTCwdu4+qSP7SxFl3neZz+mcz/1ZZP/uBJd2piR839+ONjrB2hnfMqjPwMSJm8jV1xBmSydWfBYc06Gw==", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.8ms)[0m  [1m[33mUPDATE "admin_users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "admin_users"."id" = ?[0m  [["remember_created_at", "2017-12-16 12:36:20.358509"], ["updated_at", "2017-12-16 12:36:20.360497"], ["id", 1]]
+  [1m[35m (138.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[33mUPDATE "admin_users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "admin_users"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", "2017-12-16 12:36:20.505907"], ["last_sign_in_at", "2017-12-16 12:36:20.505907"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["updated_at", "2017-12-16 12:36:20.508839"], ["id", 1]]
+  [1m[35m (298.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 1155ms (ActiveRecord: 443.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-12-16 14:36:30 +0200
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/page/index.html.arb
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/page/index.html.arb (1637.2ms)
+Completed 200 OK in 1754ms (Views: 1713.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/categories" for 127.0.0.1 at 2017-12-16 14:36:36 +0200
+Processing by Admin::CategoriesController#index as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "categories" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mPhoto Load (0.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb (693.4ms)
+Completed 200 OK in 919ms (Views: 881.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admin/categories/new" for 127.0.0.1 at 2017-12-16 14:36:47 +0200
+Processing by Admin::CategoriesController#new as HTML
+  [1m[36mAdminUser Load (1.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/new.html.arb
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/new.html.arb (328.9ms)
+Completed 200 OK in 484ms (Views: 477.5ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/admin/categories" for 127.0.0.1 at 2017-12-16 14:37:00 +0200
+Processing by Admin::CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"auApYtQGTLMVgDgzc8Pge+S9NVNw35aSUxqgx4T3WHYwlEpeT9BQQ8KByuOgYZ2iofcU6J+qQhda0XXahAwzRg==", "category"=>{"name"=>"People"}, "commit"=>"Create Category"}
+  [1m[36mAdminUser Load (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (19.8ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "People"], ["created_at", "2017-12-16 12:37:00.322869"], ["updated_at", "2017-12-16 12:37:00.322869"]]
+  [1m[35m (162.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin/categories/1
+Completed 302 Found in 664ms (ActiveRecord: 181.7ms)
+
+
+Started GET "/admin/categories/1" for 127.0.0.1 at 2017-12-16 14:37:01 +0200
+Processing by Admin::CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAdminUser Load (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/show.html.arb
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = 1 AND "active_admin_comments"."namespace" = ?[0m  [["resource_type", "Category"], ["namespace", "admin"]]
+  [1m[36mActiveAdmin::Comment Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = 1 AND "active_admin_comments"."namespace" = ? LIMIT ? OFFSET ?[0m  [["resource_type", "Category"], ["namespace", "admin"], ["LIMIT", 1], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = 1 AND "active_admin_comments"."namespace" = ? ORDER BY created_at ASC LIMIT ? OFFSET ?) subquery_for_count[0m  [["resource_type", "Category"], ["namespace", "admin"], ["LIMIT", 25], ["OFFSET", 0]]
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/show.html.arb (538.5ms)
+Completed 200 OK in 693ms (Views: 682.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admin/categories" for 127.0.0.1 at 2017-12-16 14:37:12 +0200
+Processing by Admin::CategoriesController#index as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "categories" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "categories" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "categories" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" ORDER BY "categories"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mPhoto Load (0.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb (471.4ms)
+Completed 200 OK in 621ms (Views: 616.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/categories/new" for 127.0.0.1 at 2017-12-16 14:37:18 +0200
+Processing by Admin::CategoriesController#new as HTML
+  [1m[36mAdminUser Load (1.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/new.html.arb
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/new.html.arb (343.2ms)
+Completed 200 OK in 494ms (Views: 490.3ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/admin/categories" for 127.0.0.1 at 2017-12-16 14:37:25 +0200
+Processing by Admin::CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KRomPUb5WgoZ71VwYppDm8shajtFR9E/fcnzHMhGf3VzbkUB3S9G+s7up6CxOD5CjmtLgKoyBbp0AiYByL0URQ==", "category"=>{"name"=>"Animals"}, "commit"=>"Create Category"}
+  [1m[36mAdminUser Load (1.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (13.3ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Animals"], ["created_at", "2017-12-16 12:37:25.187025"], ["updated_at", "2017-12-16 12:37:25.187025"]]
+  [1m[35m (190.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin/categories/2
+Completed 302 Found in 708ms (ActiveRecord: 205.0ms)
+
+
+Started GET "/admin/categories/2" for 127.0.0.1 at 2017-12-16 14:37:25 +0200
+Processing by Admin::CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAdminUser Load (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/show.html.arb
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = 2 AND "active_admin_comments"."namespace" = ?[0m  [["resource_type", "Category"], ["namespace", "admin"]]
+  [1m[36mActiveAdmin::Comment Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = 2 AND "active_admin_comments"."namespace" = ? LIMIT ? OFFSET ?[0m  [["resource_type", "Category"], ["namespace", "admin"], ["LIMIT", 1], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = 2 AND "active_admin_comments"."namespace" = ? ORDER BY created_at ASC LIMIT ? OFFSET ?) subquery_for_count[0m  [["resource_type", "Category"], ["namespace", "admin"], ["LIMIT", 25], ["OFFSET", 0]]
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/show.html.arb (412.4ms)
+Completed 200 OK in 561ms (Views: 554.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admin/comments" for 127.0.0.1 at 2017-12-16 14:37:34 +0200
+Processing by Admin::CommentsController#index as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."namespace" = ?[0m  [["namespace", "admin"]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "active_admin_comments" WHERE "active_admin_comments"."namespace" = ? LIMIT ? OFFSET ?) subquery_for_count[0m  [["namespace", "admin"], ["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT DISTINCT "active_admin_comments"."resource_type" FROM "active_admin_comments" ORDER BY resource_type asc[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT DISTINCT "active_admin_comments"."author_type" FROM "active_admin_comments" ORDER BY author_type asc[0m
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb (355.7ms)
+Completed 200 OK in 506ms (Views: 500.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/admin/categories" for 127.0.0.1 at 2017-12-16 14:37:41 +0200
+Processing by Admin::CategoriesController#index as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "categories" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "categories" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "categories" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" ORDER BY "categories"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mPhoto Load (0.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb (399.5ms)
+Completed 200 OK in 549ms (Views: 543.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/categories/new" for 127.0.0.1 at 2017-12-16 14:37:45 +0200
+Processing by Admin::CategoriesController#new as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/new.html.arb
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/new.html.arb (358.2ms)
+Completed 200 OK in 510ms (Views: 506.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/categories" for 127.0.0.1 at 2017-12-16 14:37:55 +0200
+Processing by Admin::CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ndKJ10990JiMrkSgmGR9gqRxdZwabVBn+e4YZCRtef7Hpurr1KvMaFuvtnBLxgBb4TtUJ/UYhOLwJc15JJYSzg==", "category"=>{"name"=>"Transport"}, "commit"=>"Create Category"}
+  [1m[36mAdminUser Load (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (20.4ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Transport"], ["created_at", "2017-12-16 12:37:55.546959"], ["updated_at", "2017-12-16 12:37:55.546959"]]
+  [1m[35m (160.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin/categories/3
+Completed 302 Found in 704ms (ActiveRecord: 181.0ms)
+
+
+Started GET "/admin/categories/3" for 127.0.0.1 at 2017-12-16 14:37:56 +0200
+Processing by Admin::CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAdminUser Load (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/show.html.arb
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = 3 AND "active_admin_comments"."namespace" = ?[0m  [["resource_type", "Category"], ["namespace", "admin"]]
+  [1m[36mActiveAdmin::Comment Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = 3 AND "active_admin_comments"."namespace" = ? LIMIT ? OFFSET ?[0m  [["resource_type", "Category"], ["namespace", "admin"], ["LIMIT", 1], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = 3 AND "active_admin_comments"."namespace" = ? ORDER BY created_at ASC LIMIT ? OFFSET ?) subquery_for_count[0m  [["resource_type", "Category"], ["namespace", "admin"], ["LIMIT", 25], ["OFFSET", 0]]
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/show.html.arb (433.2ms)
+Completed 200 OK in 583ms (Views: 579.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/categories" for 127.0.0.1 at 2017-12-16 14:37:57 +0200
+Processing by Admin::CategoriesController#index as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "categories" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "categories" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "categories" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" ORDER BY "categories"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mPhoto Load (1.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb (419.5ms)
+Completed 200 OK in 570ms (Views: 565.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/categories/new" for 127.0.0.1 at 2017-12-16 14:37:59 +0200
+Processing by Admin::CategoriesController#new as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/new.html.arb
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/new.html.arb (333.5ms)
+Completed 200 OK in 484ms (Views: 482.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/categories" for 127.0.0.1 at 2017-12-16 14:38:03 +0200
+Processing by Admin::CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"leQ03d5G1KFlcAlK1lYbeVF2vWAABNYNDkwbAGqx9wvPkFfhRZDIUbJx+5oF9GagFDyc2+9xAogHh84dakqcOw==", "category"=>{"name"=>"Other"}, "commit"=>"Create Category"}
+  [1m[36mAdminUser Load (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (25.6ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Other"], ["created_at", "2017-12-16 12:38:03.920608"], ["updated_at", "2017-12-16 12:38:03.920608"]]
+  [1m[35m (138.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin/categories/4
+Completed 302 Found in 637ms (ActiveRecord: 164.3ms)
+
+
+Started GET "/admin/categories/4" for 127.0.0.1 at 2017-12-16 14:38:04 +0200
+Processing by Admin::CategoriesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAdminUser Load (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/show.html.arb
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = 4 AND "active_admin_comments"."namespace" = ?[0m  [["resource_type", "Category"], ["namespace", "admin"]]
+  [1m[36mActiveAdmin::Comment Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = 4 AND "active_admin_comments"."namespace" = ? LIMIT ? OFFSET ?[0m  [["resource_type", "Category"], ["namespace", "admin"], ["LIMIT", 1], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "active_admin_comments" WHERE "active_admin_comments"."resource_type" = ? AND "active_admin_comments"."resource_id" = 4 AND "active_admin_comments"."namespace" = ? ORDER BY created_at ASC LIMIT ? OFFSET ?) subquery_for_count[0m  [["resource_type", "Category"], ["namespace", "admin"], ["LIMIT", 25], ["OFFSET", 0]]
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/show.html.arb (426.1ms)
+Completed 200 OK in 601ms (Views: 571.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/logout" for 127.0.0.1 at 2017-12-16 14:38:10 +0200
+Processing by ActiveAdmin::Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"aSWQJhcONRKorQ9Z7wnit+1H3QC024lO80e8CThB2QkzUfMajNgp4n+s/Yk8q59uqA38u1uuXcv6jGkUOLqyOQ=="}
+  [1m[36mAdminUser Load (1.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  [1m[33mUPDATE "admin_users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "admin_users"."id" = ?[0m  [["remember_created_at", nil], ["updated_at", "2017-12-16 12:38:10.492364"], ["id", 1]]
+  [1m[35m (120.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 156ms (ActiveRecord: 124.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-12-16 14:38:10 +0200
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2017-12-16 14:38:10 +0200
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/devise/shared/_links.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (108.5ms)
+Completed 200 OK in 666ms (Views: 665.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-16 14:38:15 +0200
+Processing by PagesController#index as HTML
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_rightbar.html.erb (0.0ms)
+  Rendered pages/index.html.erb within layouts/application (52.2ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (60.4ms)
+Completed 200 OK in 985ms (Views: 942.8ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-12-16 14:38:18 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/shared/_links.html.erb (2.0ms)
+  Rendered users/sessions/new.html.erb within layouts/application (32.1ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 861ms (Views: 859.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-12-16 14:38:29 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lJFhkLhk4Vb/TWVJo7XJTvNPjdeBNoPfUysHqlQKlmmWlIyBvOPINx+14/ZWBHYz+R/Oc6JmyfcRBtdjlZvctg==", "user"=>{"email"=>"Nicky.Mouse@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "nicky.mouse@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_created_at", "2017-12-16 12:38:29.465834"], ["updated_at", "2017-12-16 12:38:29.467965"], ["id", 1]]
+  [1m[35m (56.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 16], ["current_sign_in_at", "2017-12-16 12:38:29.529869"], ["last_sign_in_at", "2017-12-16 07:12:34.365386"], ["updated_at", "2017-12-16 12:38:29.531237"], ["id", 1]]
+  [1m[35m (100.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 652ms (ActiveRecord: 159.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-16 14:38:30 +0200
+Processing by PagesController#index as HTML
+  [1m[36mPost Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered layouts/_rightbar.html.erb (0.0ms)
+  Rendered pages/index.html.erb within layouts/application (29.4ms)
+  Rendered layouts/_navbar.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 684ms (Views: 625.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/photos" for 127.0.0.1 at 2017-12-16 14:38:32 +0200
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhoto Load (0.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  Rendering photos/index.html.erb within layouts/application
+  Rendered photos/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 615ms (Views: 597.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/images/new" for 127.0.0.1 at 2017-12-16 14:38:34 +0200
+Processing by ImagesController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (0.0ms)
+  Rendered images/new.html.erb within layouts/application (15.3ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 648ms (Views: 631.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/images" for 127.0.0.1 at 2017-12-16 14:38:40 +0200
+Processing by ImagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cmuyjo2PbN4PfcfT3IWQOl170gJGGoYEsprF7xP1kOT8VbkvtDW6Au0PQVOYjdIKjE9waKTaB/Ix8STEhHTGGw==", "images"=>[#<ActionDispatch::Http::UploadedFile:0xee581c0 @tempfile=#<Tempfile:C:/Users/08DE~1/AppData/Local/Temp/RackMultipart20171216-6884-zm5ggi.png>, @original_filename="default-avatar-ponsy-deer.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"images[]\"; filename=\"default-avatar-ponsy-deer.png\"\r\nContent-Type: image/png\r\n">], "commit"=>"Upload"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Command :: SET PATH=C:\Program Files (x86)\GnuWin32\bin;%PATH% & file -b --mime "C:/Users/08DE~1/AppData/Local/Temp/4db0228adc72e528dbc8a93fb27f98f720171216-6884-uh4cvi.png"
+Command :: SET PATH=C:\Program Files (x86)\GnuWin32\bin;%PATH% & identify -format '%wx%h,%[exif:orientation]' "C:/Users/08DE~1/AppData/Local/Temp/4db0228adc72e528dbc8a93fb27f98f720171216-6884-19arrn8.png[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: SET PATH=C:\Program Files (x86)\GnuWin32\bin;%PATH% & identify -format '%wx%h,%[exif:orientation]' "C:/Users/08DE~1/AppData/Local/Temp/4db0228adc72e528dbc8a93fb27f98f720171216-6884-19arrn8.png[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: SET PATH=C:\Program Files (x86)\GnuWin32\bin;%PATH% & file -b --mime "C:/Users/08DE~1/AppData/Local/Temp/4db0228adc72e528dbc8a93fb27f98f720171216-6884-1iqbt0s.png"
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/images
+Completed 302 Found in 111ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/images" for 127.0.0.1 at 2017-12-16 14:38:40 +0200
+Processing by ImagesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mImage Load (0.0ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  Rendering images/index.html.erb within layouts/application
+  Rendered images/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 629ms (Views: 610.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/photos/new" for 127.0.0.1 at 2017-12-16 14:38:44 +0200
+Processing by PhotosController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photos/new.html.erb within layouts/application
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  Rendered photos/_form.html.erb (6.0ms)
+  Rendered photos/new.html.erb within layouts/application (26.1ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 672ms (Views: 649.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/photos" for 127.0.0.1 at 2017-12-16 14:38:57 +0200
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4DQTjPMNEpKsKk+2S1t/wACENKYfyVjjYHkdH2e7fi1fOOCGGM6ACn5OYgVQN+5o8k8sMBLqAgRR3Mcz2Ybhxg==", "category_id"=>"2", "photo"=>{"name"=>"asdf", "photo"=>#<ActionDispatch::Http::UploadedFile:0xe368260 @tempfile=#<Tempfile:C:/Users/08DE~1/AppData/Local/Temp/RackMultipart20171216-6884-fg7j8i.jpg>, @original_filename="5d2391e10dbf9081853ee1cf56c9e264.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[photo]\"; filename=\"5d2391e10dbf9081853ee1cf56c9e264.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Save"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (34.4ms)[0m  [1m[32mINSERT INTO "photos" ("user_id", "name", "category_id", "created_at", "updated_at", "photo") VALUES (?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["name", "asdf"], ["category_id", 2], ["created_at", "2017-12-16 12:38:57.568697"], ["updated_at", "2017-12-16 12:38:57.568697"], ["photo", "5d2391e10dbf9081853ee1cf56c9e264.jpg"]]
+  [1m[35m (154.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/photos
+Completed 302 Found in 242ms (ActiveRecord: 188.8ms)
+
+
+Started GET "/photos" for 127.0.0.1 at 2017-12-16 14:38:57 +0200
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhoto Load (1.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT SUM("votes"."like") FROM "votes" WHERE "votes"."photo_id" = ?[0m  [["photo_id", 1]]
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered photos/index.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 691ms (Views: 624.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/photos/1/vote" for 127.0.0.1 at 2017-12-16 14:39:04 +0200
+Processing by PhotosController#vote as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhoto Load (0.0ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Photo Load (0.0ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mVote Load (0.0ms)[0m  [1m[34mSELECT  "votes".* FROM "votes" WHERE "votes"."user_id" = ? AND "votes"."photo_id" = ? ORDER BY "votes"."id" ASC LIMIT ?[0m  [["user_id", 1], ["photo_id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhoto Load (0.0ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (4.2ms)[0m  [1m[32mINSERT INTO "votes" ("user_id", "photo_id", "like", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["photo_id", 1], ["like", 1], ["created_at", "2017-12-16 12:39:04.890245"], ["updated_at", "2017-12-16 12:39:04.890245"]]
+  [1m[35m (122.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/photos
+Completed 302 Found in 227ms (ActiveRecord: 128.3ms)
+
+
+Started GET "/photos" for 127.0.0.1 at 2017-12-16 14:39:05 +0200
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhoto Load (0.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT SUM("votes"."like") FROM "votes" WHERE "votes"."photo_id" = ?[0m  [["photo_id", 1]]
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered photos/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (3.0ms)
+Completed 200 OK in 626ms (Views: 607.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/new" for 127.0.0.1 at 2017-12-16 14:39:08 +0200
+Processing by ImagesController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (1.0ms)
+  Rendered images/new.html.erb within layouts/application (15.8ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 675ms (Views: 654.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/images" for 127.0.0.1 at 2017-12-16 14:39:44 +0200
+Processing by ImagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EagLIIp21MAHiwrGHIrsvE+2vXjoJIYZcOAvbeD6reXnlgCBs8wCHOX5jEZYgq6MnoIfEgrkB+/zi85Gd3v7Gg==", "commit"=>"Upload"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/images
+Completed 302 Found in 10ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/images" for 127.0.0.1 at 2017-12-16 14:39:44 +0200
+Processing by ImagesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mImage Load (0.0ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  Rendering images/index.html.erb within layouts/application
+  Rendered images/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 712ms (Views: 657.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/images/new" for 127.0.0.1 at 2017-12-16 14:39:47 +0200
+Processing by ImagesController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (0.0ms)
+  Rendered images/new.html.erb within layouts/application (14.9ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (4.0ms)
+Completed 200 OK in 689ms (Views: 673.6ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/images" for 127.0.0.1 at 2017-12-16 14:39:59 +0200
+Processing by ImagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J9V9pQ7k5KDLqovA1DVzBYOdXbE3iXK69iYrOUn79L/R63YEN14yfCnYDUCQPTE1Uqn/29VJ80x1TcoS3nqiQA==", "images"=>[#<ActionDispatch::Http::UploadedFile:0xee528e0 @tempfile=#<Tempfile:C:/Users/08DE~1/AppData/Local/Temp/RackMultipart20171216-6884-1ljz345.png>, @original_filename="sticker,375x360-bg,ffffff.u3.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"images[]\"; filename=\"sticker,375x360-bg,ffffff.u3.png\"\r\nContent-Type: image/png\r\n">, #<ActionDispatch::Http::UploadedFile:0xee528b0 @tempfile=#<Tempfile:C:/Users/08DE~1/AppData/Local/Temp/RackMultipart20171216-6884-7vt2ir.png>, @original_filename="no_avatar.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"images[]\"; filename=\"no_avatar.png\"\r\nContent-Type: image/png\r\n">], "commit"=>"Upload"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Command :: SET PATH=C:\Program Files (x86)\GnuWin32\bin;%PATH% & file -b --mime "C:/Users/08DE~1/AppData/Local/Temp/4e8a289cd8d9a75b27b3a434fa027fec20171216-6884-8kl589.png"
+Command :: SET PATH=C:\Program Files (x86)\GnuWin32\bin;%PATH% & identify -format '%wx%h,%[exif:orientation]' "C:/Users/08DE~1/AppData/Local/Temp/42eba88598ca74833cb5d3b81a16f83720171216-6884-1trkau2.png[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: SET PATH=C:\Program Files (x86)\GnuWin32\bin;%PATH% & identify -format '%wx%h,%[exif:orientation]' "C:/Users/08DE~1/AppData/Local/Temp/42eba88598ca74833cb5d3b81a16f83720171216-6884-1trkau2.png[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: SET PATH=C:\Program Files (x86)\GnuWin32\bin;%PATH% & file -b --mime "C:/Users/08DE~1/AppData/Local/Temp/4e8a289cd8d9a75b27b3a434fa027fec20171216-6884-1qmpe2c.png"
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Command :: SET PATH=C:\Program Files (x86)\GnuWin32\bin;%PATH% & file -b --mime "C:/Users/08DE~1/AppData/Local/Temp/ad9a4c35262c91e7f46c6c98a92a74ea20171216-6884-qsdfsd.png"
+Command :: SET PATH=C:\Program Files (x86)\GnuWin32\bin;%PATH% & identify -format '%wx%h,%[exif:orientation]' "C:/Users/08DE~1/AppData/Local/Temp/ad9a4c35262c91e7f46c6c98a92a74ea20171216-6884-1de73ci.png[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: SET PATH=C:\Program Files (x86)\GnuWin32\bin;%PATH% & identify -format '%wx%h,%[exif:orientation]' "C:/Users/08DE~1/AppData/Local/Temp/ad9a4c35262c91e7f46c6c98a92a74ea20171216-6884-1de73ci.png[0]" 2>NUL
+[paperclip] An error was received while processing: #<Paperclip::Errors::NotIdentifiedByImageMagickError: Paperclip::Errors::NotIdentifiedByImageMagickError>
+Command :: SET PATH=C:\Program Files (x86)\GnuWin32\bin;%PATH% & file -b --mime "C:/Users/08DE~1/AppData/Local/Temp/ad9a4c35262c91e7f46c6c98a92a74ea20171216-6884-1130bb8.png"
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/images
+Completed 302 Found in 143ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/images" for 127.0.0.1 at 2017-12-16 14:39:59 +0200
+Processing by ImagesController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mImage Load (0.0ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  Rendering images/index.html.erb within layouts/application
+  Rendered images/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 656ms (Views: 639.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-12-16 14:40:17 +0200
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2017-12-16 14:40:17 +0200
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/devise/shared/_links.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (89.9ms)
+Completed 200 OK in 621ms (Views: 620.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2017-12-16 14:40:31 +0200
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zYn3yC7IBcIny2HaAOlbL+CX6rZHNL7wTkILgxU/EdCIB7DmrSF/aVkFA1Mn/cSJlq54pJtZ3Xv9YpfmR3ZVAw==", "admin_user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "admin@example.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "admin_users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "admin_users"."id" = ?[0m  [["current_sign_in_at", "2017-12-16 12:40:31.694023"], ["sign_in_count", 2], ["updated_at", "2017-12-16 12:40:31.695027"], ["id", 1]]
+  [1m[35m (103.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 710ms (ActiveRecord: 104.0ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-12-16 14:40:32 +0200
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/page/index.html.arb
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/page/index.html.arb (310.3ms)
+Completed 200 OK in 376ms (Views: 373.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/photos" for 127.0.0.1 at 2017-12-16 14:40:40 +0200
+Processing by Admin::PhotosController#index as HTML
+  [1m[36mAdminUser Load (1.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "photos" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "photos" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "photos"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "photos" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mPhoto Load (0.0ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" ORDER BY "photos"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[36mVote Load (0.0ms)[0m  [1m[34mSELECT "votes".* FROM "votes"[0m
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb (416.7ms)
+Completed 200 OK in 563ms (Views: 559.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admin/images" for 127.0.0.1 at 2017-12-16 14:40:43 +0200
+Processing by Admin::ImagesController#index as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "images" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb (374.6ms)
+Completed 200 OK in 550ms (Views: 546.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/photos" for 127.0.0.1 at 2017-12-16 14:40:45 +0200
+Processing by Admin::PhotosController#index as HTML
+  [1m[36mAdminUser Load (1.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "photos" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "photos" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "photos"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "photos" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mPhoto Load (0.0ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" ORDER BY "photos"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[36mVote Load (0.0ms)[0m  [1m[34mSELECT "votes".* FROM "votes"[0m
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb (444.3ms)
+Completed 200 OK in 594ms (Views: 588.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admin/postcomments" for 127.0.0.1 at 2017-12-16 14:40:46 +0200
+Processing by Admin::PostcommentsController#index as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "postcomments" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "postcomments" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "postcomments"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "postcomments" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mPostcomment Load (0.0ms)[0m  [1m[34mSELECT  "postcomments".* FROM "postcomments" ORDER BY "postcomments"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mPost Load (0.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb (440.9ms)
+Completed 200 OK in 590ms (Views: 583.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2017-12-16 14:40:49 +0200
+Processing by Admin::PostsController#index as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "posts" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "posts" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "posts" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mPost Load (0.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mPostcomment Load (1.0ms)[0m  [1m[34mSELECT "postcomments".* FROM "postcomments"[0m
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb (430.8ms)
+Completed 200 OK in 579ms (Views: 573.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admin/vote_for_photos" for 127.0.0.1 at 2017-12-16 14:40:53 +0200
+Processing by Admin::VoteForPhotosController#index as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "vote_for_photos" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mImage Load (0.0ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb (329.8ms)
+Completed 200 OK in 483ms (Views: 474.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admin/votes" for 127.0.0.1 at 2017-12-16 14:40:55 +0200
+Processing by Admin::VotesController#index as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "votes" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "votes" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "votes"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "votes" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mVote Load (1.0ms)[0m  [1m[34mSELECT  "votes".* FROM "votes" ORDER BY "votes"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhoto Load (0.0ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mPhoto Load (1.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb (442.3ms)
+Completed 200 OK in 594ms (Views: 586.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2017-12-16 14:40:58 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mPostcomment Load (0.0ms)[0m  [1m[34mSELECT "postcomments".* FROM "postcomments"[0m
+  [1m[36mPhoto Load (0.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  [1m[36mImage Load (0.0ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  [1m[36mVote Load (0.0ms)[0m  [1m[34mSELECT "votes".* FROM "votes"[0m
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb (526.4ms)
+Completed 500 Internal Server Error in 675ms (ActiveRecord: 3.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant User::Voteforphoto):
+    1: insert_tag renderer_for(:index)
+  
+activerecord (5.1.4) lib/active_record/inheritance.rb:166:in `compute_type'
+activerecord (5.1.4) lib/active_record/reflection.rb:393:in `compute_class'
+activerecord (5.1.4) lib/active_record/reflection.rb:389:in `klass'
+formtastic (3.1.5) lib/formtastic/inputs/base/collections.rb:90:in `collection_from_association'
+formtastic (3.1.5) lib/formtastic/inputs/base/collections.rb:46:in `raw_collection'
+formtastic (3.1.5) lib/formtastic/inputs/base/collections.rb:51:in `collection'
+activeadmin (1.1.0) lib/active_admin/inputs/filters/select_input.rb:43:in `collection'
+formtastic (3.1.5) lib/formtastic/inputs/select_input.rb:173:in `select_html'
+formtastic (3.1.5) lib/formtastic/inputs/select_input.rb:168:in `block in to_html'
+actionview (5.1.4) lib/action_view/helpers/capture_helper.rb:39:in `block in capture'
+actionview (5.1.4) lib/action_view/helpers/capture_helper.rb:203:in `with_output_buffer'
+actionview (5.1.4) lib/action_view/helpers/capture_helper.rb:39:in `capture'
+activeadmin (1.1.0) lib/active_admin/inputs/filters/base.rb:12:in `input_wrapping'
+formtastic (3.1.5) lib/formtastic/inputs/select_input.rb:166:in `to_html'
+formtastic (3.1.5) lib/formtastic/helpers/input_helper.rb:242:in `input'
+activeadmin (1.1.0) lib/active_admin/filters/forms.rb:14:in `filter'
+activeadmin (1.1.0) lib/active_admin/filters/forms.rb:61:in `block (2 levels) in active_admin_filters_form_for'
+activeadmin (1.1.0) lib/active_admin/filters/forms.rb:57:in `each'
+activeadmin (1.1.0) lib/active_admin/filters/forms.rb:57:in `block in active_admin_filters_form_for'
+actionview (5.1.4) lib/action_view/helpers/capture_helper.rb:39:in `block in capture'
+actionview (5.1.4) lib/action_view/helpers/capture_helper.rb:203:in `with_output_buffer'
+actionview (5.1.4) lib/action_view/helpers/capture_helper.rb:39:in `capture'
+actionview (5.1.4) lib/action_view/helpers/form_helper.rb:450:in `form_for'
+client_side_validations (11.0.0) lib/client_side_validations/action_view/form_helper.rb:11:in `form_for'
+activeadmin (1.1.0) lib/active_admin/filters/forms.rb:56:in `active_admin_filters_form_for'
+arbre (1.1.1) lib/arbre/element.rb:180:in `method_missing'
+activeadmin (1.1.0) lib/active_admin/filters/resource_extension.rb:144:in `block in filters_sidebar_section'
+activeadmin (1.1.0) lib/active_admin/views/components/sidebar_section.rb:25:in `instance_exec'
+activeadmin (1.1.0) lib/active_admin/views/components/sidebar_section.rb:25:in `build_sidebar_content'
+activeadmin (1.1.0) lib/active_admin/views/components/sidebar_section.rb:13:in `build'
+arbre (1.1.1) lib/arbre/element/builder_methods.rb:30:in `block in build_tag'
+arbre (1.1.1) lib/arbre/context.rb:92:in `with_current_arbre_element'
+arbre (1.1.1) lib/arbre/element/builder_methods.rb:49:in `with_current_arbre_element'
+arbre (1.1.1) lib/arbre/element/builder_methods.rb:26:in `build_tag'
+arbre (1.1.1) lib/arbre/element/builder_methods.rb:39:in `insert_tag'
+arbre (1.1.1) lib/arbre/element/builder_methods.rb:14:in `sidebar_section'
+activeadmin (1.1.0) lib/active_admin/views/pages/base.rb:132:in `block (2 levels) in build_sidebar'
+activeadmin (1.1.0) lib/active_admin/views/pages/base.rb:131:in `collect'
+activeadmin (1.1.0) lib/active_admin/views/pages/base.rb:131:in `block in build_sidebar'
+arbre (1.1.1) lib/arbre/element/builder_methods.rb:31:in `block in build_tag'
+arbre (1.1.1) lib/arbre/context.rb:92:in `with_current_arbre_element'
+arbre (1.1.1) lib/arbre/element/builder_methods.rb:49:in `with_current_arbre_element'
+arbre (1.1.1) lib/arbre/element/builder_methods.rb:26:in `build_tag'
+arbre (1.1.1) lib/arbre/element/builder_methods.rb:39:in `insert_tag'
+arbre (1.1.1) lib/arbre/element/builder_methods.rb:14:in `div'
+activeadmin (1.1.0) lib/active_admin/views/pages/base.rb:130:in `build_sidebar'
+activeadmin (1.1.0) lib/active_admin/views/pages/base.rb:78:in `block in build_page_content'
+arbre (1.1.1) lib/arbre/element/builder_methods.rb:31:in `block in build_tag'
+arbre (1.1.1) lib/arbre/context.rb:92:in `with_current_arbre_element'
+arbre (1.1.1) lib/arbre/element/builder_methods.rb:49:in `with_current_arbre_element'
+arbre (1.1.1) lib/arbre/element/builder_methods.rb:26:in `build_tag'
+arbre (1.1.1) lib/arbre/element/builder_methods.rb:39:in `insert_tag'
+arbre (1.1.1) lib/arbre/element/builder_methods.rb:14:in `div'
+activeadmin (1.1.0) lib/active_admin/views/pages/base.rb:76:in `build_page_content'
+activeadmin (1.1.0) lib/active_admin/views/pages/base.rb:54:in `block (2 levels) in build_page'
+arbre (1.1.1) lib/arbre/element/builder_methods.rb:31:in `block in build_tag'
+arbre (1.1.1) lib/arbre/context.rb:92:in `with_current_arbre_element'
+arbre (1.1.1) lib/arbre/element/builder_methods.rb:49:in `with_current_arbre_element'
+arbre (1.1.1) lib/arbre/element/builder_methods.rb:26:in `build_tag'
+arbre (1.1.1) lib/arbre/element/builder_methods.rb:39:in `insert_tag'
+arbre (1.1.1) lib/arbre/element/builder_methods.rb:14:in `div'
+activeadmin (1.1.0) lib/active_admin/views/pages/base.rb:50:in `block in build_page'
+arbre (1.1.1) lib/arbre/context.rb:92:in `with_current_arbre_element'
+arbre (1.1.1) lib/arbre/element/builder_methods.rb:49:in `with_current_arbre_element'
+activeadmin (1.1.0) lib/active_admin/views/pages/base.rb:49:in `build_page'
+activeadmin (1.1.0) lib/active_admin/views/pages/base.rb:10:in `build'
+arbre (1.1.1) lib/arbre/element/builder_methods.rb:30:in `block in build_tag'
+arbre (1.1.1) lib/arbre/context.rb:92:in `with_current_arbre_element'
+arbre (1.1.1) lib/arbre/element/builder_methods.rb:26:in `build_tag'
+arbre (1.1.1) lib/arbre/element/builder_methods.rb:39:in `insert_tag'
+activeadmin (1.1.0) app/views/active_admin/resource/index.html.arb:2:in `block in _____ails_nstaller__uby______lib_ruby_gems_______gems_activeadmin_______app_views_active_admin_resource_index_html_arb___116579401_122537988'
+arbre (1.1.1) lib/arbre/context.rb:45:in `instance_eval'
+arbre (1.1.1) lib/arbre/context.rb:45:in `initialize'
+activeadmin (1.1.0) app/views/active_admin/resource/index.html.arb:1:in `new'
+activeadmin (1.1.0) app/views/active_admin/resource/index.html.arb:1:in `_____ails_nstaller__uby______lib_ruby_gems_______gems_activeadmin_______app_views_active_admin_resource_index_html_arb___116579401_122537988'
+actionview (5.1.4) lib/action_view/template.rb:157:in `block in render'
+activesupport (5.1.4) lib/active_support/notifications.rb:168:in `instrument'
+actionview (5.1.4) lib/action_view/template.rb:352:in `instrument_render_template'
+actionview (5.1.4) lib/action_view/template.rb:155:in `render'
+actionview (5.1.4) lib/action_view/renderer/template_renderer.rb:52:in `block (2 levels) in render_template'
+actionview (5.1.4) lib/action_view/renderer/abstract_renderer.rb:42:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionview (5.1.4) lib/action_view/renderer/abstract_renderer.rb:41:in `instrument'
+actionview (5.1.4) lib/action_view/renderer/template_renderer.rb:51:in `block in render_template'
+actionview (5.1.4) lib/action_view/renderer/template_renderer.rb:59:in `render_with_layout'
+actionview (5.1.4) lib/action_view/renderer/template_renderer.rb:50:in `render_template'
+actionview (5.1.4) lib/action_view/renderer/template_renderer.rb:14:in `render'
+actionview (5.1.4) lib/action_view/renderer/renderer.rb:42:in `render_template'
+actionview (5.1.4) lib/action_view/renderer/renderer.rb:23:in `render'
+actionview (5.1.4) lib/action_view/rendering.rb:103:in `_render_template'
+actionpack (5.1.4) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+actionview (5.1.4) lib/action_view/rendering.rb:83:in `render_to_body'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+actionpack (5.1.4) lib/action_controller/metal/renderers.rb:141:in `render_to_body'
+actionpack (5.1.4) lib/abstract_controller/rendering.rb:24:in `render'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:36:in `render'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+activesupport (5.1.4) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+C:/RailsInstaller/Ruby2.3.3/lib/ruby/2.3.0/benchmark.rb:308:in `realtime'
+activesupport (5.1.4) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:29:in `cleanup_view_runtime'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:43:in `render'
+responders (2.4.0) lib/action_controller/responder.rb:238:in `default_render'
+responders (2.4.0) lib/action_controller/responder.rb:170:in `to_html'
+responders (2.4.0) lib/responders/flash_responder.rb:107:in `to_html'
+responders (2.4.0) lib/action_controller/responder.rb:163:in `respond'
+responders (2.4.0) lib/action_controller/responder.rb:156:in `call'
+responders (2.4.0) lib/action_controller/respond_with.rb:211:in `respond_with'
+inherited_resources (1.7.2) lib/inherited_resources/actions.rb:7:in `index'
+activeadmin (1.1.0) lib/active_admin/resource_controller/streaming.rb:12:in `index'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/admin/images" for 127.0.0.1 at 2017-12-16 14:41:01 +0200
+Processing by Admin::ImagesController#index as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "images" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb (2248.5ms)
+Completed 200 OK in 3391ms (Views: 3379.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/categories" for 127.0.0.1 at 2017-12-16 14:41:06 +0200
+Processing by Admin::CategoriesController#index as HTML
+  [1m[36mAdminUser Load (1.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "categories" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "categories" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "categories" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mCategory Load (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" ORDER BY "categories"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mPhoto Load (0.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb (409.5ms)
+Completed 200 OK in 585ms (Views: 580.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/admin_users" for 127.0.0.1 at 2017-12-16 14:41:07 +0200
+Processing by Admin::AdminUsersController#index as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "admin_users"[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 FROM "admin_users" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  [1m[36mAdminUser Load (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" ORDER BY "admin_users"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/resource/index.html.arb (404.6ms)
+Completed 200 OK in 554ms (Views: 550.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2017-12-16 14:41:08 +0200
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.0ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/page/index.html.arb
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/activeadmin-1.1.0/app/views/active_admin/page/index.html.arb (305.0ms)
+Completed 200 OK in 374ms (Views: 370.5ms | ActiveRecord: 0.0ms)
+
+
