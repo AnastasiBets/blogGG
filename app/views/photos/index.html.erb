@@ -1,6 +1,7 @@
 <%= link_to "Upload new foto", new_photo_path , class: "btn btn-default"%>
 <%= link_to "Upload multiple image", new_image_path , class: "btn btn-default"%>
 <br>
+
 <% if @photos == [] %>
 	There is no photos yet.
 <% else %>
@@ -10,12 +11,15 @@
 	<p>Name<%= photo.name %></p>
 	<p>Category<%= photo.category.name %></p>
 	<p>User<%= photo.user.nickname %></p>
+
 	<p><% if current_user != nil and current_user.id == photo.user_id %>
-		<%= link_to "Edit", edit_photo_path(photo.id, photo) %>
+		<%= link_to "Edit", edit_photo_path(photo.id) %>
 		<%= link_to "Delete", photo_path(photo.id), data: {confim: 'Are you sure?'}, method: :delete %>
+		
 	<% end %>
 	</p>
-	<p><%= link_to "Like", vote_photo_path(photo.id) %>(<%= @like[photo.id] %>)</p>
+	<p><%= link_to "Like", vote_photo_path(photo.id) %>
+	(<%= @like[photo.id] %>)</p>
  	</div>
 	<% end %>
-<% end %> 
+<% end %> 		

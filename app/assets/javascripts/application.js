@@ -11,8 +11,8 @@
 // about supported directives.
 //
 //= require jquery
-//= require tinymce-jquery
 //= require bootstrap-sprockets
+//= require tinymce-jquery
 //= require rails-ujs
 //= require turbolinks
 //= require rails.validations

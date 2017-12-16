@@ -28,9 +28,9 @@ class PhotosController < ApplicationController
 
 	def update		
 		params[:photo][:user_id] = @photo.user_id
- 		params[:photo][:category_id] = @photo.category_id
- 		@photo.update(photo_params)
- 		redirect_to photos_path
+    	params[:photo][:category_id] = @photo.category_id
+    	@photo.update(photo_params)
+    	redirect_to 'photos'
   	end
 
 	def destroy		
@@ -38,21 +38,19 @@ class PhotosController < ApplicationController
  		redirect_to photos_path
   	end
 
-  	def vote
-		@vote = Vote.where(user_id: current_user.id, photo_id: @photo.id).first
-
-		if @vote == nil 
-			@like = 1 			
-			Vote.create(user_id: current_user.id, photo_id: @photo.id, like: @like)
-		else
-			if @vote.like == 1
-				@vote.update(like: @vote.like-1)
-			else
-				@vote.update(like: @vote.like+1)
-			end
-		end
-		redirect_to photos_path
-	end
+  def vote
+    @photo = Photo.find(params[:id])
+    @vote = Vote.where(user_id: current_user.id, photo_id: @photo.id).first
+    if @vote == nil
+       @like = 1
+       Vote.create(user_id: current_user.id, photo_id: @photo.id, like: @like)
+    elsif @vote.like == 0
+         @vote.update(like: @vote.like + 1)
+    else
+       @vote.update(like: @vote.like - 1)
+    end
+    redirect_to photos_path
+  end
 
 private
 
@@ -61,7 +59,7 @@ private
 	end
 
 	def photo_set
-		@photo = Photo.find(params[:id])
+		pp @photo = Photo.find(params[:id])
   		
   	end
 

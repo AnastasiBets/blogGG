@@ -4,7 +4,7 @@ before_action :authenticate_user!
 before_action :set_post, only:[:show, :edit, :update, :destroy]
 
   def show
-    @comment = @post.postcomment
+    pp @comment = @post.postcomment
   end
 
   def new
